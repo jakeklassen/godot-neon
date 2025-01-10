@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bktrkm87hln8g"
-path="res://.godot/imported/square.png-a07b0c09e99da012e8f7e5d58d728c57.ctex"
+uid="uid://ckg4c447png5v"
+path="res://.godot/imported/linear_light.png-311a5fcaf7244b24a08e82da94bc66b2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/square.png"
-dest_files=["res://.godot/imported/square.png-a07b0c09e99da012e8f7e5d58d728c57.ctex"]
+source_file="res://resources/Blends/linear_light.png"
+dest_files=["res://.godot/imported/linear_light.png-311a5fcaf7244b24a08e82da94bc66b2.ctex"]
 
 [params]
 

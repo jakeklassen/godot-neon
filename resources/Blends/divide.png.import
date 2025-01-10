@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bktrkm87hln8g"
-path="res://.godot/imported/square.png-a07b0c09e99da012e8f7e5d58d728c57.ctex"
+uid="uid://b1e5m3fnyvsfn"
+path="res://.godot/imported/divide.png-365017893011149e051ae9491a81a965.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/square.png"
-dest_files=["res://.godot/imported/square.png-a07b0c09e99da012e8f7e5d58d728c57.ctex"]
+source_file="res://resources/Blends/divide.png"
+dest_files=["res://.godot/imported/divide.png-365017893011149e051ae9491a81a965.ctex"]
 
 [params]
 

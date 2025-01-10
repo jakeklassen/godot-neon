@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bktrkm87hln8g"
-path="res://.godot/imported/square.png-a07b0c09e99da012e8f7e5d58d728c57.ctex"
+uid="uid://cuk0vog51wfrf"
+path="res://.godot/imported/inverse_subtract.png-d9b57e610e24dba37337a597c4352444.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/square.png"
-dest_files=["res://.godot/imported/square.png-a07b0c09e99da012e8f7e5d58d728c57.ctex"]
+source_file="res://resources/Blends/inverse_subtract.png"
+dest_files=["res://.godot/imported/inverse_subtract.png-d9b57e610e24dba37337a597c4352444.ctex"]
 
 [params]
 

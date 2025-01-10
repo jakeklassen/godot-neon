@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bktrkm87hln8g"
-path="res://.godot/imported/square.png-a07b0c09e99da012e8f7e5d58d728c57.ctex"
+uid="uid://xgd68sav3a7d"
+path="res://.godot/imported/XOR.png-270928891b6e6f8a82a1dece86d76562.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/square.png"
-dest_files=["res://.godot/imported/square.png-a07b0c09e99da012e8f7e5d58d728c57.ctex"]
+source_file="res://resources/Blends/XOR.png"
+dest_files=["res://.godot/imported/XOR.png-270928891b6e6f8a82a1dece86d76562.ctex"]
 
 [params]
 

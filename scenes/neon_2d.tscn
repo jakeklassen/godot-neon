@@ -1,13 +1,18 @@
-[gd_scene load_steps=6 format=3 uid="uid://c3pmaflo0wnwg"]
+[gd_scene load_steps=9 format=3 uid="uid://c3pmaflo0wnwg"]
 
 [ext_resource type="Texture2D" uid="uid://cadmh35it8x08" path="res://assets/bullet.png" id="1_kev6w"]
 [ext_resource type="Texture2D" uid="uid://ctrqjd6reth8x" path="res://assets/ship.png" id="2_d2o6t"]
 [ext_resource type="PackedScene" uid="uid://bs2xu52qywj0q" path="res://neon_demo/scenes/Rotator.tscn" id="2_g217o"]
+[ext_resource type="PackedScene" uid="uid://badqqqaqt3pkw" path="res://neon_demo/scenes/Movement.tscn" id="4_12c64"]
+[ext_resource type="Texture2D" uid="uid://bktrkm87hln8g" path="res://assets/square.png" id="4_nw2dc"]
 
 [sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_tsn3d"]
 blend_mode = 1
 
 [sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_qop4r"]
+blend_mode = 1
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_flc6h"]
 blend_mode = 1
 
 [node name="Node2D" type="Node2D"]
@@ -19,7 +24,6 @@ position = Vector2(115, 101)
 modulate = Color(1, 0, 0, 1)
 material = SubResource("CanvasItemMaterial_tsn3d")
 rotation = 0.785398
-scale = Vector2(1, 1)
 texture = ExtResource("1_kev6w")
 
 [node name="Rotator" parent="Bullets/Bullet" instance=ExtResource("2_g217o")]
@@ -29,7 +33,6 @@ modulate = Color(0, 1, 1, 1)
 material = SubResource("CanvasItemMaterial_tsn3d")
 position = Vector2(4, 0)
 rotation = 0.785398
-scale = Vector2(1, 1)
 texture = ExtResource("1_kev6w")
 
 [node name="Rotator" parent="Bullets/Bullet2" instance=ExtResource("2_g217o")]
@@ -39,7 +42,6 @@ modulate = Color(0.584314, 0.941176, 0, 1)
 material = SubResource("CanvasItemMaterial_tsn3d")
 position = Vector2(8, 0)
 rotation = 0.785398
-scale = Vector2(1, 1)
 texture = ExtResource("1_kev6w")
 
 [node name="Rotator" parent="Bullets/Bullet3" instance=ExtResource("2_g217o")]
@@ -49,7 +51,6 @@ modulate = Color(0.890196, 0.556863, 0, 1)
 material = SubResource("CanvasItemMaterial_tsn3d")
 position = Vector2(12, 0)
 rotation = 0.785398
-scale = Vector2(1, 1)
 texture = ExtResource("1_kev6w")
 
 [node name="Rotator" parent="Bullets/Bullet4" instance=ExtResource("2_g217o")]
@@ -58,3 +59,12 @@ texture = ExtResource("1_kev6w")
 material = SubResource("CanvasItemMaterial_qop4r")
 position = Vector2(121, 100)
 texture = ExtResource("2_d2o6t")
+
+[node name="Movement" parent="Ship" instance=ExtResource("4_12c64")]
+
+[node name="Square" type="Sprite2D" parent="."]
+material = SubResource("CanvasItemMaterial_flc6h")
+position = Vector2(121, 132)
+texture = ExtResource("4_nw2dc")
+
+[node name="Rotator" parent="Square" instance=ExtResource("2_g217o")]

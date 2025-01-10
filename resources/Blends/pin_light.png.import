@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bktrkm87hln8g"
-path="res://.godot/imported/square.png-a07b0c09e99da012e8f7e5d58d728c57.ctex"
+uid="uid://cxxpjo253un0u"
+path="res://.godot/imported/pin_light.png-c3d4ce22abfbffa0d5d44de7c120dbec.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/square.png"
-dest_files=["res://.godot/imported/square.png-a07b0c09e99da012e8f7e5d58d728c57.ctex"]
+source_file="res://resources/Blends/pin_light.png"
+dest_files=["res://.godot/imported/pin_light.png-c3d4ce22abfbffa0d5d44de7c120dbec.ctex"]
 
 [params]
 

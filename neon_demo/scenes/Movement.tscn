@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://badqqqaqt3pkw"]
+
+[ext_resource type="Script" path="res://neon_demo/scenes/movement.gd" id="1_x05ps"]
+
+[node name="Movement" type="Node"]
+script = ExtResource("1_x05ps")
