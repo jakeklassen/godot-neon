@@ -1,0 +1,64 @@
+[gd_scene load_steps=8 format=3 uid="uid://b0i1tka4lv1pt"]
+
+[ext_resource type="Material" uid="uid://cl83nmjjfc0kt" path="res://resources/materials/neon.tres" id="1_didsr"]
+[ext_resource type="Material" uid="uid://kogbs1qfvmrq" path="res://resources/materials/neon_2.tres" id="2_itjdq"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_x6hse"]
+sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+ground_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+
+[sub_resource type="Sky" id="Sky_udla1"]
+sky_material = SubResource("ProceduralSkyMaterial_x6hse")
+
+[sub_resource type="Environment" id="Environment_1jwuh"]
+sky = SubResource("Sky_udla1")
+ambient_light_source = 1
+reflected_light_source = 1
+glow_enabled = true
+glow_levels/2 = 0.5
+glow_levels/3 = 0.5
+glow_levels/5 = 0.1
+glow_normalized = true
+glow_intensity = 0.5
+glow_blend_mode = 1
+
+[sub_resource type="TorusMesh" id="TorusMesh_8dnls"]
+inner_radius = 0.75
+
+[sub_resource type="TorusMesh" id="TorusMesh_145ki"]
+lightmap_size_hint = Vector2i(31, 4)
+inner_radius = 0.947
+outer_radius = 0.771
+
+[node name="Node3D" type="Node3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_1jwuh")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.866023, -0.433016, 0.250001, 0, 0.499998, 0.866027, -0.500003, 0.749999, -0.43301, 0, 0, 0)
+visible = false
+shadow_enabled = true
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 10, 0)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.25, 0)
+material_override = ExtResource("1_didsr")
+mesh = SubResource("TorusMesh_8dnls")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="MeshInstance3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.72536, 0.25, 0)
+material_override = ExtResource("1_didsr")
+mesh = SubResource("TorusMesh_145ki")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.25, 0.853088)
+material_override = ExtResource("2_itjdq")
+mesh = SubResource("TorusMesh_8dnls")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="MeshInstance3D2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.25, 0)
+material_override = ExtResource("2_itjdq")
+mesh = SubResource("TorusMesh_145ki")

@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://cguhhikdk0i4h"]
+
+[ext_resource type="Shader" path="res://resources/shaders/new_shader_canvas_item.gdshader" id="1_povym"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_hi8lp"]
+shader = ExtResource("1_povym")
+shader_parameter/base_color = Color(0, 0.636387, 0.636386, 1)
+shader_parameter/glow_intensity = 1.204
+shader_parameter/outline_thickness = 3.634
+
+[node name="Node2D" type="Node2D"]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+material = SubResource("ShaderMaterial_hi8lp")
+offset_left = 285.0
+offset_top = 306.0
+offset_right = 325.0
+offset_bottom = 346.0
+color = Color(0.988235, 0.439216, 0.780392, 1)

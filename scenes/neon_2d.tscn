@@ -1,0 +1,60 @@
+[gd_scene load_steps=6 format=3 uid="uid://c3pmaflo0wnwg"]
+
+[ext_resource type="Texture2D" uid="uid://cadmh35it8x08" path="res://assets/bullet.png" id="1_kev6w"]
+[ext_resource type="Texture2D" uid="uid://ctrqjd6reth8x" path="res://assets/ship.png" id="2_d2o6t"]
+[ext_resource type="PackedScene" uid="uid://bs2xu52qywj0q" path="res://neon_demo/scenes/Rotator.tscn" id="2_g217o"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_tsn3d"]
+blend_mode = 1
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_qop4r"]
+blend_mode = 1
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Bullets" type="Node2D" parent="."]
+position = Vector2(115, 101)
+
+[node name="Bullet" type="Sprite2D" parent="Bullets"]
+modulate = Color(1, 0, 0, 1)
+material = SubResource("CanvasItemMaterial_tsn3d")
+rotation = 0.785398
+scale = Vector2(1, 1)
+texture = ExtResource("1_kev6w")
+
+[node name="Rotator" parent="Bullets/Bullet" instance=ExtResource("2_g217o")]
+
+[node name="Bullet2" type="Sprite2D" parent="Bullets"]
+modulate = Color(0, 1, 1, 1)
+material = SubResource("CanvasItemMaterial_tsn3d")
+position = Vector2(4, 0)
+rotation = 0.785398
+scale = Vector2(1, 1)
+texture = ExtResource("1_kev6w")
+
+[node name="Rotator" parent="Bullets/Bullet2" instance=ExtResource("2_g217o")]
+
+[node name="Bullet3" type="Sprite2D" parent="Bullets"]
+modulate = Color(0.584314, 0.941176, 0, 1)
+material = SubResource("CanvasItemMaterial_tsn3d")
+position = Vector2(8, 0)
+rotation = 0.785398
+scale = Vector2(1, 1)
+texture = ExtResource("1_kev6w")
+
+[node name="Rotator" parent="Bullets/Bullet3" instance=ExtResource("2_g217o")]
+
+[node name="Bullet4" type="Sprite2D" parent="Bullets"]
+modulate = Color(0.890196, 0.556863, 0, 1)
+material = SubResource("CanvasItemMaterial_tsn3d")
+position = Vector2(12, 0)
+rotation = 0.785398
+scale = Vector2(1, 1)
+texture = ExtResource("1_kev6w")
+
+[node name="Rotator" parent="Bullets/Bullet4" instance=ExtResource("2_g217o")]
+
+[node name="Ship" type="Sprite2D" parent="."]
+material = SubResource("CanvasItemMaterial_qop4r")
+position = Vector2(121, 100)
+texture = ExtResource("2_d2o6t")

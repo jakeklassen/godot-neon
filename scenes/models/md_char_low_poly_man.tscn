@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://b72orrqpvoebg"]
+
+[ext_resource type="PackedScene" uid="uid://dovdqsnrx0mfd" path="res://assets/Md_Char_Low_Poly_Man.fbx" id="1_8ath8"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ttmco"]
+
+[node name="Md_Char_Low_Poly_Man" instance=ExtResource("1_8ath8")]
+
+[node name="Md_Char_Low_Poly_Man" parent="Skeleton3D" index="0"]
+surface_material_override/0 = SubResource("StandardMaterial3D_ttmco")
